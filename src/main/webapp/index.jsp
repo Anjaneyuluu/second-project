@@ -1,5 +1,5 @@
 <html>
 <body>
-<h2>jenkins Hello World!</h2>
+<h2 style="color: violet">jenkins Hello World!</h2>
 </body>
 </html>
