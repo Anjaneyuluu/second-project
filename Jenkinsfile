@@ -23,5 +23,14 @@ pipeline {
             }
         }
         
+        stage('Docker Deploy') {
+            steps {
+                sshagent(['docker-host']) {
+                    sh ""ssh ec2-user@172.31.45.121 docker run -d -p 8080:8080 --name second-project mrofficialnah/second-project:0.0.2"
+                }
+            }
+            
+        }
+        
     }
 }
